@@ -3,7 +3,7 @@ const mobileNumber = document.getElementById('input-mobile').value;
 const pinNumber = document.getElementById('input-pin').value;
 console.log(mobileNumber, pinNumber)
 
-if(mobileNumber==='1' && pinNumber==='2'){
+if(mobileNumber==='12345' && pinNumber==='2025'){
 console.log('Successfully Logged in.')
 window.location.href = '../Html/home.html';
 }
