@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Money</title>
+    <link rel="stylesheet" href="../Css/home.css" />
+    <link rel="shortcut icon" href="../Images/Logo.png" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div class="all flex justify-center">
+      <div class="mockup-phone bg-white">
+        <div class="mockup-phone-camera"></div>
+        <div
+          class="mockup-phone-display text-black grid place-content-center relative"
+        >
+          <main>
+            <!-- header part  -->
+            <div class="main-header">
+              <top class="absolute top-1 left-1">
+                <div
+                  class="flex w-[355px] ml-2 mt-2 parent-head justify-between"
+                >
+                  <div class="time">
+                    <p class="font-bold mt-[-5px]">12:00</p>
+                  </div>
+                  <div class="flex gap-2 networks">
+                    <div class="net">
+                      <img src="../Images/Cellular Connection.png" alt="" />
+                    </div>
+                    <div class="wifi">
+                      <img src="../Images/Wifi.png" alt="" />
+                    </div>
+                    <div class="charge">
+                      <img src="../Images/Battery.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </top>
+
+              <div
+                class="header absolute mx-auto top-20 left-2 pb-3 flex gap-22 border-b border-gray-300"
+              >
+                <div class="info flex justify-center">
+                  <div class="logo w-[50px] h-[80px]">
+                    <img src="../Images/Logo.png" alt="" />
+                  </div>
+                  <div class="infos mt-2">
+                    <h2 class="text-xl font-bold">50,000 USD</h2>
+                    <p class="text-sm text-gray-500">Available Balance</p>
+                  </div>
+                </div>
+                <div id="addMoneyLogut" class="logout-btn mt-4">
+                  <button
+                    class="flex gap-3 p-2 pl-3 pr-4 rounded-md border border-gray-400 cursor-pointer"
+                  >
+                    <img src="../Images/logout.png" alt="" />
+                    <p class="text-gray-500">Logout</p>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- information section start -->
+            <section class="info absolute left-5 top-46 m-2">
+             <legend class="text-xl font-bold pb-1">
+                    Add Money 🙋‍♂️
+                  </legend>
+              <!-- cards -->
+              <div class="cards grid grid-cols-3 pt-7 gap-4">
+                <div class="cards1 border-1 border-gray-400 rounded-md p-3 cursor-pointer">
+                  <div class="image flex justify-center">
+                    <img
+                      class="flex justify-center"
+                      src="../Images/add money.png"
+                      alt=""
+                    />
+                  </div>
+                  <h4 class="text-sm flex justify-center ">Add Money</h4>
+                </div>
+                <div id="cashOut" class="cards1 border border-gray-400 rounded-md p-3 cursor-pointer">
+                  <div class="image flex justify-center">
+                    <img
+                      class="flex justify-center"
+                      src="../Images/cash out.png"
+                      alt=""
+                    />
+                  </div>
+                  <h4 class="text-sm flex justify-center">Cash Out</h4>
+                </div>
+                <div class="cards1 border border-gray-400 rounded-md p-3 cursor-pointer">
+                  <div class="image flex justify-center">
+                    <img
+                      class="flex justify-center"
+                      src="../Images/money 1.png"
+                      alt=""
+                    />
+                  </div>
+                  <h4 class="text-sm flex justify-center">Transfer M.</h4>
+                </div>
+              </div>
+              <div class="cards grid grid-cols-3 pt-4 gap-4 cursor-pointer">
+                <div class="cards1 border border-gray-400 rounded-md p-3">
+                  <div class="image flex justify-center">
+                    <img
+                      class="flex justify-center"
+                      src="../Images/get bonus.png"
+                      alt=""
+                    />
+                  </div>
+                  <h4 class="text-sm flex justify-center">Get Bonus</h4>
+                </div>
+                <div class="cards1 border border-gray-400 rounded-md p-3">
+                  <div class="image flex justify-center">
+                    <img
+                      class="flex justify-center"
+                      src="../Images/pay bill.png"
+                      alt=""
+                    />
+                  </div>
+                  <h4 class="text-sm flex justify-center">Pay Bill</h4>
+                </div>
+                <div class="cards1 border-3 border-blue-400 rounded-md p-3">
+                  <div class="image flex justify-center">
+                    <img
+                      class="flex justify-center"
+                      src="../Images/transaction.png"
+                      alt=""
+                    />
+                  </div>
+                  <h4 class="text-sm flex justify-center">Transaction</h4>
+                </div>
+              </div>
+            </section>
+            <!-- latest payment section start -->
+            <section>
+              <div class="heading grid grid-cols-2 gap-22 absolute left-2 bottom-90 ">
+                <div class="headingTitle">
+                  <h2 class="text-xl font-bold">Latest Payment</h2>
+                </div>
+                <div class="viewBtn flex justify-center gap-2 mt-1 ">
+                  <div class="vewbtntxt ">
+                    <button class=" text-gray-500 cursor-pointer">
+                    View All
+                  </button>
+                  </div>
+                  <div class="icon mr-[-30px]">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                      />
+                    </svg>
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="history absolute left-2 bottom-70 cursor-pointer">
+                <div class="electricbill bg-gray-200 rounded-md p-2 grid grid-cols-2 justify-between gap-15 ">
+                  <div class="hpicon1 flex justify-center gap-2">
+                    <div class="hpicond bg-white p-2 rounded-full"><img src="../Images/add money.png" alt=""></div>
+                    <div class="hptextd1">
+                      <p class=" font-bold">Electricity Bill </p>
+                      <p class="text-xs"> Today 03:45 PM</p>
+                    </div>
+                  </div>
+                  <div class="doticond1 text-end mr-3 "><p class="font-bold text-xl ">:</p></div>
+                </div>
+              </div>
+              <div class="history absolute left-2 bottom-53 cursor-pointer">
+                <div class="bankDeposit bg-gray-200 rounded-md p-2 grid grid-cols-2 justify-between gap-15 ">
+                  <div class="hpicon2 flex justify-center gap-2">
+                    <div class="hpicond bg-white p-2 rounded-full"><img src="../Images/add money.png" alt=""></div>
+                    <div class="hptextd1">
+                      <p class=" font-bold">Bank Deposit </p>
+                      <p class="text-xs"> Today 10:45 AM</p>
+                    </div>
+                  </div>
+                  <div class="doticond2 text-end mr-3 "><p class="font-bold text-xl ">:</p></div>
+                </div>
+              </div>
+              <div class="history absolute left-2 bottom-36 cursor-pointer">
+                <div class="mobileRecharge bg-gray-200 rounded-md p-2 grid grid-cols-2 justify-between gap-2 ">
+                  <div class="hpicon2 flex justify-center gap-2">
+                    <div class="hpicond bg-white p-2 rounded-full"><img src="../Images/add money.png" alt=""></div>
+                    <div class="hptextd3">
+                      <p class=" font-bold">Mobile Recharge </p>
+                      <p class="text-xs"> Today 10:45 AM</p>
+                    </div>
+                  </div>
+                  <div class="doticond1 text-end mr-3 "><p class="font-bold text-xl ">:</p></div>
+                </div>
+              </div>
+              <div class="history absolute left-2 bottom-18 cursor-pointer">
+                <div class="mobileRecharge bg-gray-200 rounded-md p-2 grid grid-cols-2 justify-between gap-23 ">
+                  <div class="hpicon2 flex justify-center gap-2">
+                    <div class="hpicond bg-white p-2 rounded-full"><img src="../Images/add money.png" alt=""></div>
+                    <div class="hptextd3">
+                      <p class=" font-bold">Gas Bill</p>
+                      <p class="text-xs"> Today 11:45 AM</p>
+                    </div>
+                  </div>
+                  <div class="doticond1 text-end mr-3 "><p class="font-bold text-xl ">:</p></div>
+                </div>
+              </div>
+              <div class="history absolute left-2 bottom-1 cursor-pointer">
+                <div class="mobileRecharge bg-gray-200 rounded-md p-2 grid grid-cols-2 justify-between gap-23 ">
+                  <div class="hpicon2 flex justify-center gap-2">
+                    <div class="hpicond bg-white p-2 rounded-full"><img src="../Images/add money.png" alt=""></div>
+                    <div class="hptextd3">
+                      <p class=" font-bold">Water Bill</p>
+                      <p class="text-xs"> Today 11:45 AM</p>
+                    </div>
+                  </div>
+                  <div class="doticond1 text-end mr-3 "><p class="font-bold text-xl ">:</p></div>
+                </div>
+              </div>
+              
+            
+            </section>
+       
+          </main>
+        </div>
+      </div>
+    </div>
+    <script src="../Js/addmoney.js"></script>
+  </body>
+</html>
