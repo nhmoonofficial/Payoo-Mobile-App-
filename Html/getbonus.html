@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get Bonus</title>
+    <link rel="stylesheet" href="" />
+    <link rel="shortcut icon" href="../Images/Logo.png" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div class="all flex justify-center">
+      <div class="mockup-phone bg-white">
+        <div class="mockup-phone-camera"></div>
+        <div
+          class="mockup-phone-display text-black grid place-content-center relative"
+        >
+          <main>
+            <!-- header part  -->
+            <div class="main-header">
+              <top class="absolute top-1 left-1">
+                <div
+                  class="flex w-[355px] ml-2 mt-2 parent-head justify-between"
+                >
+                  <div class="time">
+                    <p class="font-bold mt-[-5px]">12:00</p>
+                  </div>
+                  <div class="flex gap-2 networks">
+                    <div class="net">
+                      <img src="../Images/Cellular Connection.png" alt="" />
+                    </div>
+                    <div class="wifi">
+                      <img src="../Images/Wifi.png" alt="" />
+                    </div>
+                    <div class="charge">
+                      <img src="../Images/Battery.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </top>
+
+              <div
+                class="header absolute mx-auto top-20 left-2 pb-3 flex gap-22 border-b border-gray-300"
+              >
+                <div class="info flex justify-center">
+                  <div class="logo w-[50px] h-[80px]">
+                    <img src="../Images/Logo.png" alt="" />
+                  </div>
+                  <div class="infos mt-2">
+                    <h2 class="text-xl font-bold">50,000 USD</h2>
+                    <p class="text-sm text-gray-500">Available Balance</p>
+                  </div>
+                </div>
+                <div id="cashOutLogout" class="logout-btn mt-4">
+                  <button
+                    class="flex gap-3 p-2 pl-3 pr-4 rounded-md border border-gray-400 cursor-pointer"
+                  >
+                    <img src="../Images/logout.png" alt="" />
+                    <p class="text-gray-500">Logout</p>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- information section start -->
+            <section class="info absolute left-5 top-46 m-2">
+             <legend class="text-xl font-bold pb-1">
+                   Get Bonus 🎁
+                  </legend>
+              <!-- cards -->
+              <div class="cards grid grid-cols-3 pt-7 gap-4">
+                <div class="cards1 border border-gray-400 rounded-md p-3 cursor-pointer">
+                  <div class="image flex justify-center">
+                    <img
+                      class="flex justify-center"
+                      src="../Images/add money.png"
+                      alt=""
+                    />
+                  </div>
+                  <h4 id="addMoneyDiv" class="text-sm flex justify-center ">Add Money</h4>
+                </div>
+                <div id="cashOut" class="cards1 border-1 border-gray-400 rounded-md p-3 cursor-pointer">
+                  <div class="image flex justify-center">
+                    <img
+                      class="flex justify-center"
+                      src="../Images/cash out.png"
+                      alt=""
+                    />
+                  </div>
+                  <h4 class="text-sm flex justify-center">Cash Out</h4>
+                </div>
+                <div class="cards1 border-3 border-blue-400 rounded-md p-3 cursor-pointer">
+                  <div class="image flex justify-center">
+                    <img
+                      class="flex justify-center"
+                      src="../Images/money 1.png"
+                      alt=""
+                    />
+                  </div>
+                  <h4 class="text-sm flex justify-center">Transfer M.</h4>
+                </div>
+              </div>
+              <div class="cards grid grid-cols-3 pt-4 gap-4 cursor-pointer">
+                <div class="cards1 border border-gray-400 rounded-md p-3">
+                  <div class="image flex justify-center">
+                    <img
+                      class="flex justify-center"
+                      src="../Images/get bonus.png"
+                      alt=""
+                    />
+                  </div>
+                  <h4 class="text-sm flex justify-center">Get Bonus</h4>
+                </div>
+                <div class="cards1 border border-gray-400 rounded-md p-3">
+                  <div class="image flex justify-center">
+                    <img
+                      class="flex justify-center"
+                      src="../Images/pay bill.png"
+                      alt=""
+                    />
+                  </div>
+                  <h4 class="text-sm flex justify-center">Pay Bill</h4>
+                </div>
+                <div class="cards1 border border-gray-400 rounded-md p-3">
+                  <div class="image flex justify-center">
+                    <img
+                      class="flex justify-center"
+                      src="../Images/transaction.png"
+                      alt=""
+                    />
+                  </div>
+                  <h4 class="text-sm flex justify-center">Transaction</h4>
+                </div>
+              </div>
+            </section>
+            <!-- bank information added  -->
+            <div class="bankInfos ">
+              <div class="heading"></div>
+              <div class="absolute left-2 bottom-0 ">
+                <fieldset
+                  class="fieldset bg-base-200 border-base-300 rounded-box w-xl border p-4 pb-50"
+                >
+                  
+                  <label class="label font-bold pt-5">Enter Bonus Coupon</label>
+                  <input
+                    type="text"
+                    class="input w-[350px] focus:outline-indigo-600 focus:border-0"
+                    placeholder="Enter 12345 as number"
+                  />
+
+                  <button id="btnBonus"
+                    class="btn bg-blue-700 text-white font-bold mt-4 w-[350px]"
+                  >
+                  Get Bonus
+                  </button>
+                </fieldset>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+    <script src="../Js/getbonus.js"></script>
+  </body>
+</html>
