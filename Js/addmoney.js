@@ -4,5 +4,9 @@ document.getElementById('btnAddMoney').addEventListener('click', function(){
 
 
 document.getElementById('cashOut').addEventListener('click', function(){
-window.location.href = " ../Html/cashout.html"
+window.location.href = "../Html/cashout.html"
 });
+
+document.getElementById('addMoneyLogut').addEventListener('click',function(){
+  window.location.href = "../Html/login.html"
+})
