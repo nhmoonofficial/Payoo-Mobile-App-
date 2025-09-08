@@ -34,7 +34,15 @@ const trnsAmountIs =  document.getElementById('trnsAmount').value;
 const trnsAmount = parseFloat(trnsAmountIs);
 const trnsPin = document.getElementById('trnsPin').value;
 
-console.log(trnsBalance,trnsUserNumber,trnsAmount,trnsPin, );
+const trnsNewBalanceIs = trnsBalance - trnsAmount ;
+console.log(trnsNewBalanceIs);
 
+if(trnsUserNumber === '12345' && trnsPin === '2025'){
+  document.getElementById('trnsBalance').innerText = trnsNewBalanceIs + ' USD';
+}
+
+else{
+  alert('please provide correct info')
+}
 
 })
