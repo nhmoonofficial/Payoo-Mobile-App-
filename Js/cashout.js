@@ -39,7 +39,7 @@ document.getElementById('btnCashOut').addEventListener('click',function(){
     document.getElementById('cashOutBalance').innerText = cashRemaining;
   }
   else{
-    alert('please provide right info')
+    alert('Wrong Number And Pass')
   }
 
 })
