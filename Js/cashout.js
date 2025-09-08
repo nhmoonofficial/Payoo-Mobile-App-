@@ -28,11 +28,18 @@ document.getElementById('transaction').addEventListener('click', function(){
 document.getElementById('btnCashOut').addEventListener('click',function(){
   const cashOutBalanceIs = document.getElementById('cashOutBalance').innerText;
   const cashOutBalance = parseFloat(cashOutBalanceIs);
-  const cashAgentName = document.getElementById('cashAgentNumber').value;
+  const cashAgentNumber = document.getElementById('cashAgentNumber').value;
   const cashAmountIs = document.getElementById('cashOutAmount').value;
   const cashAmount = parseFloat(cashAmountIs);
   const cashPin = document.getElementById('cashOutPin').value;
-  console.log(typeof(cashAmount));
+  const cashRemaining = cashOutBalance - cashAmount + ' USD';
 
+
+  if( cashAgentNumber === '12345' && cashPin === '2025' ){
+    document.getElementById('cashOutBalance').innerText = cashRemaining;
+  }
+  else{
+    alert('please provide right info')
+  }
 
 })
