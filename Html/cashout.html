@@ -52,7 +52,7 @@
                     <img src="../Images/Logo.png" alt="" />
                   </div>
                   <div class="infos mt-2">
-                    <h2 class="text-xl font-bold">50,000 USD</h2>
+                    <h2 id="cashoutBalance" class="text-xl font-bold">50000 USD</h2>
                     <p class="text-sm text-gray-500">Available Balance</p>
                   </div>
                 </div>
@@ -147,6 +147,7 @@
                   
                   <label class="label font-bold">Agent Number</label>
                   <input
+                  id="agentNumber"
                     type="text"
                     class="input w-[350px] focus:outline-indigo-600 focus:border-0"
                     placeholder="Enter 12345 as number"
@@ -154,12 +155,14 @@
 
                   <label class="label">Amount</label>
                   <input
+                  id="cashoutAmount"
                     type="text"
                     class="input w-[350px] focus:outline-indigo-600 focus:border-0"
                     placeholder="Enter amount of money"
                   />
                   <label class="label">Pin Number</label>
                   <input
+                  id="cashoutPin"
                     type="text"
                     class="input w-[350px] focus:outline-indigo-600 focus:border-0"
                     placeholder="Enter 2025 as pin"

@@ -20,3 +20,13 @@ document.getElementById('payBill').addEventListener('click', function(){
 document.getElementById('transaction').addEventListener('click', function(){
   window.location.href = '../Html/transaction.html';
 })
+
+
+
+// * Function start here 
+
+document.getElementById('btnCashOut').addEventListener('click',function(){
+  const cashoutBalanceIs = document.getElementById('cashoutBalance').innerText;
+  const cashoutBalance = parseFloat(cashoutBalanceIs);
+  
+})
