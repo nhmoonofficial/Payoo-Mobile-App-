@@ -52,7 +52,7 @@
                     <img src="../Images/Logo.png" alt="" />
                   </div>
                   <div class="infos mt-2">
-                    <h2 class="text-xl font-bold">50,000 USD</h2>
+                    <h2 id="balance" class="text-xl font-bold">50,000 USD</h2>
                     <p class="text-sm text-gray-500">Available Balance</p>
                   </div>
                 </div>
@@ -68,12 +68,13 @@
             </div>
             <!-- information section start -->
             <section class="info absolute left-5 top-46 m-2">
-             <legend class="text-xl font-bold pb-1">
-                    Add Money 🙋‍♂️
-                  </legend>
+              <legend class="text-xl font-bold pb-1">Add Money 🙋‍♂️</legend>
               <!-- cards -->
               <div class="cards grid grid-cols-3 pt-7 gap-4">
-                <div id="addMoney" class="cards1 border-3 border-blue-400 rounded-md p-3 cursor-pointer">
+                <div
+                  id="addMoney"
+                  class="cards1 border-3 border-blue-400 rounded-md p-3 cursor-pointer"
+                >
                   <div class="image flex justify-center">
                     <img
                       class="flex justify-center"
@@ -81,9 +82,12 @@
                       alt=""
                     />
                   </div>
-                  <h4 class="text-sm flex justify-center ">Add Money</h4>
+                  <h4 class="text-sm flex justify-center">Add Money</h4>
                 </div>
-                <div id="cashOut" class="cards1 border border-gray-400 rounded-md p-3 cursor-pointer">
+                <div
+                  id="cashOut"
+                  class="cards1 border border-gray-400 rounded-md p-3 cursor-pointer"
+                >
                   <div class="image flex justify-center">
                     <img
                       class="flex justify-center"
@@ -93,7 +97,10 @@
                   </div>
                   <h4 class="text-sm flex justify-center">Cash Out</h4>
                 </div>
-                <div id="transferMoney" class="cards1 border border-gray-400 rounded-md p-3 cursor-pointer">
+                <div
+                  id="transferMoney"
+                  class="cards1 border border-gray-400 rounded-md p-3 cursor-pointer"
+                >
                   <div class="image flex justify-center">
                     <img
                       class="flex justify-center"
@@ -105,7 +112,10 @@
                 </div>
               </div>
               <div class="cards grid grid-cols-3 pt-4 gap-4 cursor-pointer">
-                <div id="getBonus"  class="cards1 border border-gray-400 rounded-md p-3">
+                <div
+                  id="getBonus"
+                  class="cards1 border border-gray-400 rounded-md p-3"
+                >
                   <div class="image flex justify-center">
                     <img
                       class="flex justify-center"
@@ -115,7 +125,10 @@
                   </div>
                   <h4 class="text-sm flex justify-center">Get Bonus</h4>
                 </div>
-                <div id="payBill" class="cards1 border border-gray-400 rounded-md p-3">
+                <div
+                  id="payBill"
+                  class="cards1 border border-gray-400 rounded-md p-3"
+                >
                   <div class="image flex justify-center">
                     <img
                       class="flex justify-center"
@@ -125,7 +138,10 @@
                   </div>
                   <h4 class="text-sm flex justify-center">Pay Bill</h4>
                 </div>
-                <div id="transaction" class="cards1 border border-gray-400 rounded-md p-3">
+                <div
+                  id="transaction"
+                  class="cards1 border border-gray-400 rounded-md p-3"
+                >
                   <div class="image flex justify-center">
                     <img
                       class="flex justify-center"
@@ -144,12 +160,8 @@
                 <fieldset
                   class="fieldset bg-base-200 border-base-300 rounded-box w-xl border p-4"
                 >
-                  
-
                   <div>
-                    <label
-                      for="bank"
-                      class="block font-medium text-gray-600"
+                    <label for="bank" class="block font-medium text-gray-600"
                       >Bank Name</label
                     >
                     <div class="mt-2 grid grid-cols-1">
@@ -168,7 +180,7 @@
                         viewBox="0 0 16 16"
                         fill="currentColor"
                         data-slot="icon"
-                        class="pointer-events-none col-start-1 row-start-1  size-5 self-center justify-self-end text-gray-500"
+                        class="pointer-events-none col-start-1 row-start-1 size-5 self-center justify-self-end text-gray-500"
                       >
                         <path
                           d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z"
@@ -180,6 +192,7 @@
                   </div>
                   <label class="label font-bold">Account Number</label>
                   <input
+                    id="accountNumberAdd"
                     type="text"
                     class="input w-[350px] focus:outline-indigo-600 focus:border-0"
                     placeholder="Enter 12345 as number"
@@ -187,18 +200,21 @@
 
                   <label class="label">Amount To Add.</label>
                   <input
+                    id="amountAdd"
                     type="text"
                     class="input w-[350px] focus:outline-indigo-600 focus:border-0"
                     placeholder="Enter amount of money"
                   />
                   <label class="label">Pin Number</label>
                   <input
+                    id="pinNumberAdd"
                     type="text"
                     class="input w-[350px] focus:outline-indigo-600 focus:border-0"
                     placeholder="Enter 2025 as pin"
                   />
 
-                  <button id="btnAddMoney"
+                  <button
+                    id="btnAddMoney"
                     class="btn bg-blue-700 text-white font-bold mt-4 w-[350px]"
                   >
                     Add Money
