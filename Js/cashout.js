@@ -26,7 +26,11 @@ document.getElementById('transaction').addEventListener('click', function(){
 // * Function start here 
 
 document.getElementById('btnCashOut').addEventListener('click',function(){
-  const cashoutBalanceIs = document.getElementById('cashoutBalance').innerText;
-  const cashoutBalance = parseFloat(cashoutBalanceIs);
-  
+  const cashOutBalanceIs = document.getElementById('cashOutBalance').innerText;
+  const cashOutBalance = parseFloat(cashOutBalanceIs);
+  const cashAgentName = document.getElementById('cashAgentNumber').value;
+  const cashAmount = document.getElementById('cashOutAmount').value;
+  const cashPin = document.getElementById('cashOutPin').value;
+  console.log(cashOutBalance,cashAgentName,cashAmount,cashPin);
+
 })
