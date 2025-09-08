@@ -27,14 +27,15 @@ document.getElementById("btnAddMoney").addEventListener("click", function () {
   const accountNumber = document.getElementById("accountNumberAdd").value;
   const pinNumber = document.getElementById("pinNumberAdd").value;
 
-  const addAmount = document.getElementById("amountAdd").value;
-  const newAmounts = document.getElementById("balance").innerText;
-  const newBalance = addAmount + newAmounts;
-  console.log(newBalance);
-
   if (accountNumber === "12345" && pinNumber === "2025") {
-    (document.getElementById("balance").innerText = newBalance), "USD";
-  } 
+    const addAmount = document.getElementById("amountAdd").value;
+    const latestAmount = parseFloat(addAmount);
+    const newAmounts = document.getElementById("balance").innerText;
+    const latestBalance = parseFloat(newAmounts);
+    const finalBalanceIs = latestAmount +  latestBalance ; 
+    document.getElementById('balance').innerText = finalBalanceIs + ' USD';
+
+  }
   
   
   else {
