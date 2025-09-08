@@ -37,6 +37,7 @@ document.getElementById('btnCashOut').addEventListener('click',function(){
 
   if( cashAgentNumber === '12345' && cashPin === '2025' ){
     document.getElementById('cashOutBalance').innerText = cashRemaining;
+    
   }
   else{
     alert('Wrong Number And Pass')
